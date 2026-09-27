@@ -1,0 +1,8 @@
+{
+  "name": "Delizia Custom Cakes Bakery",
+  "description": "Discover delicious custom cakes made with premium ingredients. Order handmade cakes for birthdays, weddings and special occasions. Fresh, beautiful and crafted with love.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Discover delicious custom cakes made with premium ingredients. Order handmade cakes for birthdays, weddings and special occasions. Fresh, beautiful and crafted with love.">
+   <meta property="og:title" content="Delizia Custom Cakes Bakery">
+   <meta property="og:description" content="Discover delicious custom cakes made with premium ingredients. Order handmade cakes for birthdays, weddings and special occasions. Fresh, beautiful and crafted with love.">
+   <meta name="robots" content="index, follow">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== GOOGLE FONTS (2+1 Font Rule: Cormorant Garamond + Plus Jakarta Sans + JetBrains Mono) ===============-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Delizia Custom Cakes Bakery</title>
+</head>
+<body>
+   <!--==================== HEADER & NAV (Strict 3-Zone Top Bar Contract) ====================-->
+   <header class="header" id="header">
+      <div class="nav container">
+         <!-- Zone 1: Single text element wordmark -->
+         <a href="#home" class="nav__logo">Delizia</a>
+
+         <!-- Zone 2: 4-5 clean text navigation links -->
+         <nav class="nav__menu" id="nav-menu" aria-label="Primary Navigation">
+            <ul class="nav__list">
+               <li><a href="#home" class="nav__link active-link">Atelier</a></li>
+               <li><a href="#product" class="nav__link">Collection</a></li>
+               <li><a href="#new" class="nav__link">Seasonal</a></li>
+               <li><a href="#about" class="nav__link">Craftsmanship</a></li>
+               <li><a href="#contact" class="nav__link">Bespoke &amp; Visit</a></li>
+            </ul>
+
+            <button type="button" class="nav__close" id="nav-close" aria-label="Close navigation menu">
+               <i class="ri-close-line"></i>
+            </button>
+         </nav>
+
+         <!-- Zone 3: 1-2 primary actions -->
+         <div class="nav__actions">
+            <button type="button" class="nav__action-btn" id="open-bespoke-btn">
+               Custom Cake
+            </button>
+            <button type="button" class="nav__cart-btn" id="cart-toggle" aria-label="Open shopping bag">
+               <i class="ri-shopping-bag-3-line"></i>
+               <span>Bag</span>
+               <span class="nav__cart-count" id="cart-count">0</span>
+            </button>
+            <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu">
+               <i class="ri-menu-4-line"></i>
+            </button>
+         </div>
+      </div>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HERO / STOREFRONT SECTION ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container">
+            <div class="home__content">
+               <div class="home__kicker">
+                  <span>Haute Pâtisserie</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Miraflores, Lima</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Handcrafted Daily</span>
+               </div>
+
+               <h1 class="home__title">
+                  Best Custom <em>Cakes Bakery</em> for Life’s Sweetest Moments
+               </h1>
+
+               <p class="home__description">
+                  We create handcrafted cakes made with love, single-origin Peruvian cacao, Madagascar vanilla bean, and seasonal orchard fruits. Every tier is baked to order and finished by hand in our Lima atelier.
+               </p>
+
+               <div class="home__cta-group">
+                  <a href="#product" class="button button--primary">
+                     Explore Our Cakes
+                  </a>
+                  <a href="#contact" class="button button--ghost">
+                     Configure Custom Tier
+                  </a>
+               </div>
+
+               <div class="home__proof">
+                  <div class="home__proof-item">
+                     <strong class="home__proof-num">4,800+</strong>
+                     <span class="home__proof-label">Celebration cakes delivered across Lima since 2019</span>
+                  </div>
+                  <div class="home__proof-divider" aria-hidden="true"></div>
+                  <div class="home__proof-item">
+                     <strong class="home__proof-num">100%</strong>
+                     <span class="home__proof-label">Cultured pasture butter &amp; unbleached organic flour</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="home__showcase">
+               <div class="home__stage">
+                  <div class="home__stage-topbar">
+                     <span class="home__stage-badge">
+                        <i class="ri-sparkling-line"></i> Signature Centerpiece
+                     </span>
+                     <div class="home__stage-price-group">
+                        <span class="home__stage-price" id="hero-cake-price">$34.00</span>
+                        <button type="button" class="home__stage-order-btn" id="hero-order-btn">
+                           <i class="ri-shopping-bag-3-line"></i>
+                           <span>Add Tier</span>
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="home__stage-visual">
+                     <img src="assets/img/leaf-1.png" alt="" aria-hidden="true" class="home__Stage-leaf home__Stage-leaf--1">
+                     <img src="assets/img/leaf-2.png" alt="" aria-hidden="true" class="home__Stage-leaf home__Stage-leaf--2">
+                     <img src="assets/img/home-slice-cake-1.png" alt="" aria-hidden="true" class="home__Stage-slice">
+
+                     <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+                           <article class="home__article swiper-slide" data-cake-id="hero-1" data-cake-title="Velvet Berry Couronne" data-cake-note="Fresh macerated strawberries · Vanilla diplomate · Almond genoise" data-cake-price="34.00" data-cake-img="assets/img/home-cake-1.png">
+                              <div class="home__cake-frame">
+                                 <img src="assets/img/home-cake-1.png" alt="Delicious decorated cake - Velvet Berry Couronne" class="home__cake" referrerpolicy="no-referrer">
+                              </div>
+                           </article>
+                           <article class="home__article swiper-slide" data-cake-id="hero-2" data-cake-title="Chantilly Rose Gateau" data-cake-note="Whipped mascarpone chantilly · Rosewater compote · Soft sponge" data-cake-price="36.00" data-cake-img="assets/img/home-cake-2.png">
+                              <div class="home__cake-frame">
+                                 <img src="assets/img/home-cake-2.png" alt="Delicious decorated cake - Chantilly Rose Gateau" class="home__cake" referrerpolicy="no-referrer">
+                              </div>
+                           </article>
+                           <article class="home__article swiper-slide" data-cake-id="hero-3" data-cake-title="Grand Cacao Saint-Honoré" data-cake-note="70% Cusco dark chocolate ganache · Hazelnut praline · Brioche" data-cake-price="38.00" data-cake-img="assets/img/home-cake-3.png">
+                              <div class="home__cake-frame">
+                                 <img src="assets/img/home-cake-3.png" alt="Delicious decorated cake - Grand Cacao Saint-Honoré" class="home__cake" referrerpolicy="no-referrer">
+                              </div>
+                           </article>
+                           <article class="home__article swiper-slide" data-cake-id="hero-4" data-cake-title="Imperial Pistachio &amp; Fig" data-cake-note="Roasted Sicilian pistachio mousseline · Black mission fig" data-cake-price="39.00" data-cake-img="assets/img/home-cake-4.png">
+                              <div class="home__cake-frame">
+                                 <img src="assets/img/home-cake-4.png" alt="Delicious decorated cake - Imperial Pistachio &amp; Fig" class="home__cake" referrerpolicy="no-referrer">
+                              </div>
+                           </article>
+                        </div>
+                     </div>
+
+                     <img src="assets/img/home-base.png" alt="" aria-hidden="true" class="home__stage-pedestal">
+                  </div>
+
+                  <div class="home__stage-Plinth">
+                     <div class="home__stage-caption">
+                        <div class="home__stage-meta">
+                           <span id="hero-slide-index" class="home__stage-num">01 / 04</span>
+                           <span aria-hidden="true">·</span>
+                           <span>10–12 Guests · Freshly Baked</span>
+                        </div>
+                        <h2 class="home__stage-title" id="hero-cake-title">Velvet Berry Couronne</h2>
+                        <p class="home__stage-note" id="hero-cake-note">Fresh macerated strawberries · Vanilla diplomate · Almond genoise</p>
+                     </div>
+                     <div class="home__stage-controls">
+                        <button type="button" class="home__slider-btn" id="hero-prev" aria-label="Previous signature cake">
+                           <i class="ri-arrow-left-line"></i>
+                        </button>
+                        <button type="button" class="home__slider-btn" id="hero-next" aria-label="Next signature cake">
+                           <i class="ri-arrow-right-line"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== PRODUCTS CATALOG SECTION ====================-->
+      <section class="product section" id="product">
+         <div class="container">
+            <div class="section__header">
+               <div class="section__header-left">
+                  <p class="section__kicker">Curated Pâtisserie Menu · Prepared Fresh to Order</p>
+                  <h2 class="section__title">Our Signature Collection</h2>
+               </div>
+               <p class="section__subtitle">
+                  Select a category below or inspect any cake for tasting notes, serving dimensions, and custom inscription options.
+               </p>
+            </div>
+
+            <!-- Interactive Filter & Search Controls -->
+            <div class="product__toolbar">
+               <div class="product__tabs" role="tablist" aria-label="Cake Categories">
+                  <button type="button" class="product__button active-tab" data-category="all" role="tab" aria-selected="true">All Cakes</button>
+                  <button type="button" class="product__button" data-category="strawberry" role="tab" aria-selected="false">Strawberry</button>
+                  <button type="button" class="product__button" data-category="vanilla" role="tab" aria-selected="false">Vanilla</button>
+                  <button type="button" data-category="chocolate" role="tab" aria-selected="false">Chocolate</button>
+                  <button type="button" class="product__button" data-category="dried-fruit" role="tab" aria-selected="false">Dried Fruit &amp; Nut</button>
+                  <button type="button" class="product__button" data-category="others" role="tab" aria-selected="false">Petit &amp; Citrus</button>
+               </div>
+
+               <div class="product__utilities">
+                  <div class="product__search">
+                     <i class="ri-search-line product__search-icon"></i>
+                     <input type="search" id="product-search-input" class="product__search-input" placeholder="Search cakes, notes..." aria-label="Search cakes">
+                  </div>
+
+                  <div class="product__sort">
+                     <label for="product-sort-select" class="sr-only">Sort by</label>
+                     <select id="product-sort-select" class="product__sort-select" aria-label="Sort products">
+                        <option value="featured">Sort: Featured</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Dynamic 3-Column Product Grid -->
+            <div class="product__grid" id="product-grid" aria-live="polite">
+               <!-- Populated & hydrated by main.js with immediate SSR fallback below -->
+               <article class="product__card" data-id="straw-1" data-category="strawberry" data-price="28.00" data-name="Strawberry Shortcake">
+                  <div class="product__image-wrap" data-quickview="straw-1">
+                     <img src="assets/img/product-strawberry-1.png" alt="Strawberry Shortcake" class="product__img" referrerpolicy="no-referrer">
+                     <span class="product__quickview-hint">Quick View</span>
+                  </div>
+                  <div class="product__body">
+                     <div class="product__meta">
+                        <span>Strawberry</span>
+                        <span aria-hidden="true">·</span>
+                        <span>8–10 Servings</span>
+                     </div>
+                     <h3 class="product__name" data-quickview="straw-1">Strawberry Shortcake</h3>
+                     <p class="product__tasting">Macerated valley strawberries, vanilla bean chantilly, and light sponge.</p>
+                     <div class="product__footer">
+                        <span class="product__price">$28.00</span>
+                        <div class="product__actions">
+                           <button type="button" class="product__inspect-btn" data-quickview="straw-1" aria-label="Customize Strawberry Shortcake">Customize</button>
+                           <button type="button" class="product__cart" data-add-id="straw-1" aria-label="Add Strawberry Shortcake to bag">
+                              <i class="ri-add-line"></i>
+                              <span>Add</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+            </div>
+
+            <!-- Empty state when search filter matches 0 items -->
+            <div class="product__empty" id="product-empty" hidden>
+               <p class="product__empty-title">No cakes match your current filter.</p>
+               <p class="product__empty-sub">Try clearing your search query or switching back to All Cakes.</p>
+               <button type="button" class="button button--ghost" id="reset-filters-btn">Reset Filters</button>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SEASONAL / NEW CREATIONS SECTION ====================-->
+      <section class="new section" id="new">
+         <div class="new__container container">
+            <div class="new__data">
+               <p class="section__kicker">Limited Atelier Editions · Autumn / Winter</p>
+               <h2 class="section__title">
+                  Try Our New Creations
+               </h2>
+
+               <p class="new__description">
+                  Discover the latest from our artisanal pastry shop, where we constantly compose new entremets and layered celebration cakes using peak-harvest berries, roasted nuts, and single-estate chocolates.
+               </p>
+
+               <ul class="new__highlights">
+                  <li>
+                     <strong>01. Cold-Pressed Fruit Glazes</strong>
+                     <span>Zero artificial dyes — vibrant hues derived strictly from reduced raspberry, blueberry, and Morello cherry juices.</span>
+                  </li>
+                  <li>
+                     <strong>02. 48-Hour Sponge Maturation</strong>
+                     <span>Syrup-brushed almond and cacao sponges rested for optimal crumb tenderness and aromatic depth.</span>
+                  </li>
+               </ul>
+
+               <a href="#contact" class="button button--primary new__button">Order Your Custom Cake</a>
+            </div>
+
+            <div class="new__showcase">
+               <div class="new__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="new__card swiper-slide" data-new-id="new-1">
+                        <div class="new__card-visual">
+                           <span class="new__card-edition">Edition N° 01</span>
+                           <img src="assets/img/new-cake-1.png" alt="Premium Chocolate Cake" class="new__cake" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="new__card-info">
+                           <div class="new__card-meta">
+                              <span class="new__card-origin">70% Cusco Cacao</span>
+                              <span aria-hidden="true">·</span>
+                              <span>12 Servings</span>
+                           </div>
+                           <h3 class="new__name">Premium Chocolate Cake</h3>
+                           <p class="new__note">Layered dark chocolate mousse, crisp feuilletine praline, and mirror cacao glaçage finished with gold leaf.</p>
+                           <div class="new__card-bottom">
+                              <div class="new__price-block">
+                                 <span class="new__price-label">Whole Gateau</span>
+                                 <span class="new__price">$38.00</span>
+                              </div>
+                              <button type="button" class="button button--sm new__add-btn" data-add-new="new-1" data-name="Premium Chocolate Cake" data-price="38.00" data-img="assets/img/new-cake-1.png">
+                                 <i class="ri-shopping-bag-3-line"></i>
+                                 <span>Add to Bag</span>
+                              </button>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="new__card swiper-slide" data-new-id="new-2">
+                        <div class="new__card-visual">
+                           <span class="new__card-edition">Edition N° 02</span>
+                           <img src="assets/img/new-cake-2.png" alt="Premium Vanilla Cake" class="new__cake" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="new__card-info">
+                           <div class="new__card-meta">
+                              <span class="new__card-origin">Madagascar Bourbon Vanilla</span>
+                              <span aria-hidden="true">·</span>
+                              <span>12 Servings</span>
+                           </div>
+                           <h3 class="new__name">Premium Vanilla Cake</h3>
+                           <p class="new__note">Infused double-fold vanilla bean mousseline, white chocolate velvet, and caramelized Marcona almond crunch.</p>
+                           <div class="new__card-bottom">
+                              <div class="new__price-block">
+                                 <span class="new__price-label">Whole Gateau</span>
+                                 <span class="new__price">$36.00</span>
+                              </div>
+                              <button type="button" class="button button--sm new__add-btn" data-add-new="new-2" data-name="Premium Vanilla Cake" data-price="36.00" data-img="assets/img/new-cake-2.png">
+                                 <i class="ri-shopping-bag-3-line"></i>
+                                 <span>Add to Bag</span>
+                              </button>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="new__card swiper-slide" data-new-id="new-3">
+                        <div class="new__card-visual">
+                           <span class="new__card-edition">Edition N° 03</span>
+                           <img src="assets/img/new-cake-3.png" alt="Premium Cherry Cake" class="new__cake" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="new__card-info">
+                           <div class="new__card-meta">
+                              <span class="new__card-origin">Morello Cherry &amp; Kirsch</span>
+                              <span aria-hidden="true">·</span>
+                              <span>12 Servings</span>
+                           </div>
+                           <h3 class="new__name">Premium Cherry Cake</h3>
+                           <p class="new__note">Modern Black Forest interpretation with poached sour cherries, whipped mascarpone, and dark chocolate shavings.</p>
+                           <div class="new__card-bottom">
+                              <div class="new__price-block">
+                                 <span class="new__price-label">Whole Gateau</span>
+                                 <span class="new__price">$39.00</span>
+                              </div>
+                              <button type="button" class="button button--sm new__add-btn" data-add-new="new-3" data-name="Premium Cherry Cake" data-price="39.00" data-img="assets/img/new-cake-3.png">
+                                 <i class="ri-shopping-bag-3-line"></i>
+                                 <span>Add to Bag</span>
+                              </button>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="new__card swiper-slide" data-new-id="new-4">
+                        <div class="new__card-visual">
+                           <span class="new__card-edition">Edition N° 04</span>
+                           <img src="assets/img/new-cake-4.png" alt="Premium Blueberry Cake" class="new__cake" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="new__card-info">
+                           <div class="new__card-meta">
+                              <span class="new__card-origin">Andean Wild Blueberry</span>
+                              <span aria-hidden="true">·</span>
+                              <span>12 Servings</span>
+                           </div>
+                           <h3 class="new__name">Premium Blueberry Cake</h3>
+                           <p class="new__note">Wild blueberry compote, lemon verbena diplomate cream, and tender buttermilk biscuit with berry glaze.</p>
+                           <div class="new__card-bottom">
+                              <div class="new__price-block">
+                                 <span class="new__price-label">Whole Gateau</span>
+                                 <span class="new__price">$37.00</span>
+                              </div>
+                              <button type="button" class="button button--sm new__add-btn" data-add-new="new-4" data-name="Premium Blueberry Cake" data-price="37.00" data-img="assets/img/new-cake-4.png">
+                                 <i class="ri-shopping-bag-3-line"></i>
+                                 <span>Add to Bag</span>
+                              </button>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="new__card swiper-slide" data-new-id="new-5">
+                        <div class="new__card-visual">
+                           <span class="new__card-edition">Edition N° 05</span>
+                           <img src="assets/img/new-cake-5.png" alt="Premium Raspberry Cake" class="new__cake" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="new__card-info">
+                           <div class="new__card-meta">
+                              <span class="new__card-origin">Red Raspberry &amp; Rose</span>
+                              <span aria-hidden="true">·</span>
+                              <span>12 Servings</span>
+                           </div>
+                           <h3 class="new__name">Premium Raspberry Cake</h3>
+                           <p class="new__note">Tangy raspberry coulis, pistachio dacquoise base, and silky ruby berry buttercream with rose petals.</p>
+                           <div class="new__card-bottom">
+                              <div class="new__price-block">
+                                 <span class="new__price-label">Whole Gateau</span>
+                                 <span class="new__price">$39.00</span>
+                              </div>
+                              <button type="button" class="button button--sm new__add-btn" data-add-new="new-5" data-name="Premium Raspberry Cake" data-price="39.00" data-img="assets/img/new-cake-5.png">
+                                 <i class="ri-shopping-bag-3-line"></i>
+                                 <span>Add to Bag</span>
+                              </button>
+                           </div>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="new__nav">
+                     <button type="button" class="new__nav-btn" id="new-prev" aria-label="Previous creation">
+                        <i class="ri-arrow-left-line"></i>
+                        <span>Prev</span>
+                     </button>
+                     <button type="button" class="new__nav-btn" id="new-next" aria-label="Next creation">
+                        <span>Next</span>
+                        <i class="ri-arrow-right-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CRAFTSMANSHIP / ABOUT SECTION ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container">
+            <div class="about__images">
+               <div class="about__visual-stage">
+                  <img src="assets/img/about-img.png" alt="Pastry team creating cakes" class="about__img" referrerpolicy="no-referrer">
+                  <div class="about__cupcake-strip">
+                     <figure class="about__mini-card">
+                        <img src="assets/img/about-cupcake-1.png" alt="Strawberry Swirl Petit Gateau" referrerpolicy="no-referrer">
+                        <figcaption>Berry Swirl</figcaption>
+                     </figure>
+                     <figure class="about__mini-card">
+                        <img src="assets/img/about-cupcake-2.png" alt="Chantilly Vanilla Cupcake" referrerpolicy="no-referrer">
+                        <figcaption>Vanilla Bean</figcaption>
+                     </figure>
+                     <figure class="about__mini-card">
+                        <img src="assets/img/about-cupcake-3.png" alt="Cacao Ganache Cupcake" referrerpolicy="no-referrer">
+                        <figcaption>Cusco Cacao</figcaption>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+
+            <div class="about__data">
+               <p class="section__kicker">Our Culinary Philosophy · Established in Miraflores</p>
+               <h2 class="section__title">
+                  Our Passion For Baking Cakes
+               </h2>
+
+               <p class="about__description">
+                  We are a bakery specializing in homemade desserts, custom cakes, brownies, and a wide variety of gourmet sweets. Our passion for baking allows us to create perfect sweet experiences for celebrations, special events, or simply to enjoy anytime.
+               </p>
+
+               <div class="about__pillars">
+                  <div class="about__pillar">
+                     <h3 class="about__pillar-title">01. Traceable Peruvian Ingredients</h3>
+                     <p class="about__pillar-text">We partner directly with family orchards in Huaral for strawberries and cooperativas in Quillabamba for aromatic fine-flavor cacao.</p>
+                  </div>
+                  <div class="about__pillar">
+                     <h3 class="about__pillar-title">02. French Pâtisserie Technique</h3>
+                     <p class="about__pillar-text">Our Swiss meringue buttercreams and mousses contain 35% less refined sugar than conventional bakery frostings for a clean, balanced finish.</p>
+                  </div>
+               </div>
+
+               <!-- Attributable Testimonial (Claim-to-Proof Adjacency) -->
+               <blockquote class="about__testimonial">
+                  <p class="about__quote">
+                     “Switching our hotel’s private wedding commissions to Delizia cut guest dietary complaints to zero and increased our event dessert satisfaction score from 4.2 to 4.95 across 38 receptions.”
+                  </p>
+                  <footer class="about__cite">
+                     <strong>Valeria Mendoza</strong> · Director of Events, Casa Andina Private Collection, Miraflores
+                  </footer>
+               </blockquote>
+
+               <a href="#product" class="button button--primary">View Our Products</a>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== BESPOKE CONFIGURATOR & CONTACT SECTION ====================-->
+      <section class="contact section" id="contact" itemscope itemtype="https://schema.org/LocalBusiness">
+         <div class="container">
+            <div class="section__header">
+               <div class="section__header-left">
+                  <p class="section__kicker">Bespoke Commissions &amp; Flagship Salon</p>
+                  <h2 class="section__title">Order Your Custom Cake Now</h2>
+               </div>
+               <p class="section__subtitle">
+                  Design a custom celebration tier with instant pricing and add it directly to your bag, or visit our Miraflores salon.
+               </p>
+            </div>
+
+            <div class="contact__layout">
+               <!-- Left Column: Interactive Custom Cake Configurator -->
+               <div class="bespoke__card">
+                  <div class="bespoke__header">
+                     <h3 class="bespoke__title">Bespoke Cake Configurator</h3>
+                     <span class="bespoke__price" id="bespoke-live-price">$48.00</span>
+                  </div>
+                  <p class="bespoke__sub">Configure your custom cake specifications below. Prepared fresh with 48-hour notice.</p>
+
+                  <form id="bespoke-form" class="bespoke__form">
+                     <div class="bespoke__row">
+                        <div class="bespoke__field">
+                           <label for="bespoke-occasion" class="bespoke__label">Occasion</label>
+                           <select id="bespoke-occasion" class="bespoke__select" required>
+                              <option value="Birthday Celebration">Birthday Celebration</option>
+                              <option value="Wedding / Anniversary">Wedding / Anniversary</option>
+                              <option value="Baby / Bridal Shower">Baby / Bridal Shower</option>
+                              <option value="Corporate Soirée">Corporate Soirée</option>
+                           </select>
+                        </div>
+
+                        <div class="bespoke__field">
+                           <label for="bespoke-size" class="bespoke__label">Tier Size &amp; Guests</label>
+                           <select id="bespoke-size" class="bespoke__select" required>
+                              <option value="48" data-label="6&quot; Classic Tier (10–12 Guests)">6" Classic Tier (10–12 Guests) — $48</option>
+                              <option value="68" data-label="8&quot; Grand Tier (18–22 Guests)">8" Grand Tier (18–22 Guests) — $68</option>
+                              <option value="115" data-label="Two-Tier Salon (35–40 Guests)">Two-Tier Salon (35–40 Guests) — $115</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="bespoke__row">
+                        <div class="bespoke__field">
+                           <label for="bespoke-sponge" class="bespoke__label">Signature Sponge</label>
+                           <select id="bespoke-sponge" class="bespoke__select" required>
+                              <option value="Madagascar Vanilla Bean">Madagascar Vanilla Bean</option>
+                              <option value="70% Cusco Dark Chocolate">70% Cusco Dark Chocolate</option>
+                              <option value="Roasted Almond &amp; Lemon Zest">Roasted Almond &amp; Lemon Zest</option>
+                              <option value="Red Velvet Cacao">Red Velvet Cacao</option>
+                           </select>
+                        </div>
+
+                        <div class="bespoke__field">
+                           <label for="bespoke-filling" class="bespoke__label">Compote &amp; Filling</label>
+                           <select id="bespoke-filling" class="bespoke__select" required>
+                              <option value="Fresh Strawberry &amp; Chantilly">Fresh Strawberry &amp; Chantilly</option>
+                              <option value="Salted Hazelnut Praline">Salted Hazelnut Praline (+$6)</option>
+                              <option value="Raspberry Rosewater Coulis">Raspberry Rosewater Coulis</option>
+                              <option value="Passionfruit &amp; Mango Curd">Passionfruit &amp; Mango Curd</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="bespoke__row">
+                        <div class="bespoke__field">
+                           <label for="bespoke-inscription" class="bespoke__label">Hand-Piped Inscription (Optional)</label>
+                           <input type="text" id="bespoke-inscription" class="bespoke__input" maxlength="40" placeholder="e.g. Feliz Cumpleaños Sofia">
+                        </div>
+
+                        <div class="bespoke__field">
+                           <label for="bespoke-date" class="bespoke__label">Preferred Pickup / Delivery Date</label>
+                           <input type="date" id="bespoke-date" class="bespoke__input" required>
+                        </div>
+                     </div>
+
+                     <div class="bespoke__actions">
+                        <button type="submit" class="button button--primary bespoke__submit">
+                           Add Custom Cake to Bag
+                        </button>
+                        <span class="bespoke__feedback" id="bespoke-feedback" role="status" aria-live="polite"></span>
+                     </div>
+                  </form>
+               </div>
+
+               <!-- Right Column: Salon Details & Embedded Map -->
+               <div class="contact__salon">
+                  <div class="contact__info-grid">
+                     <div class="contact__info">
+                        <h3 class="contact__title">Location</h3>
+                        <address class="contact__address" itemprop="address">
+                           128th Street Avenue,<br>Miraflores, Lima - Peru
+                        </address>
+                     </div>
+
+                     <div class="contact__info">
+                        <h3 class="contact__title">Call Us</h3>
+                        <address class="contact__address">
+                           <a href="tel:+1234-9876-00" itemprop="telephone">+1234-9876-00</a><br>
+                           <a href="tel:+00987654321" itemprop="telephone">+00987654321</a>
+                        </address>
+                     </div>
+
+                     <div class="contact__info">
+                        <h3 class="contact__title">Operational Hours</h3>
+                        <p class="contact__address">
+                           <span itemprop="openingHours" content="Mo-Sa 09:00-20:00">Mon – Sat: 9:00 AM – 8:00 PM</span><br>
+                           <span itemprop="openingHours" content="Su 09:00-18:00">Sunday: 9:00 AM – 6:00 PM</span>
+                        </p>
+                     </div>
+
+                     <div class="contact__info">
+                        <h3 class="contact__title">Direct Concierge</h3>
+                        <div class="contact__social">
+                           <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="WhatsApp Concierge">
+                              <i class="ri-whatsapp-line"></i>
+                              <span>WhatsApp</span>
+                           </a>
+                           <a href="https://m.me/bedimcode" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="Messenger">
+                              <i class="ri-messenger-line"></i>
+                              <span>Messenger</span>
+                           </a>
+                           <a href="mailto:delizia@email.com" class="contact__social-link" aria-label="Email">
+                              <i class="ri-mail-line"></i>
+                              <span>Email</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="contact__map">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.806031987447!2d-77.0319645239897!3d-12.12542114337167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8199a14e229%3A0x2cf22977190025a!2sMiraflores%2C%20Peru!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                        width="600"
+                        height="450"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Delizia Bakery Location in Miraflores, Lima">
+                     </iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container">
+         <div class="footer__brand">
+            <a href="#home" class="footer__logo">Delizia</a>
+            <p class="footer__tagline">Artisanal Custom Cakes &amp; Haute Pâtisserie · Miraflores, Lima</p>
+         </div>
+
+         <div class="footer__links">
+            <a href="#product" class="footer__link">Collection</a>
+            <a href="#new" class="footer__link">Seasonal</a>
+            <a href="#about" class="footer__link">Craftsmanship</a>
+            <a href="#contact" class="footer__link">Bespoke Order</a>
+         </div>
+
+         <div class="footer__social">
+            <a href="https://www.facebook.com/bedimcode" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+               <i class="ri-facebook-circle-line"></i>
+            </a>
+            <a href="https://www.instagram.com/bedimcode/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+               <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://x.com/bedimcode/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="X Twitter">
+               <i class="ri-twitter-x-line"></i>
+            </a>
+         </div>
+      </div>
+
+      <div class="footer__bottom container">
+         <span class="footer__copy">&#169; All Rights Reserved By Bedimcode · Delizia Pâtisserie</span>
+         <span class="footer__terms">Free refrigerated courier in Lima on orders over $45.00 · Cash or Card on Delivery supported</span>
+      </div>
+   </footer>
+
+   <!--==================== CONTIGUOUS PURCHASE MODULE (PDP MODAL) ====================-->
+   <div class="modal-backdrop" id="pdp-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pdp-title">
+      <div class="pdp__dialog">
+         <button type="button" class="pdp__close" id="pdp-close" aria-label="Close product details">
+            <i class="ri-close-line"></i>
+         </button>
+
+         <div class="pdp__grid">
+            <!-- Left: Sticky Gallery -->
+            <div class="pdp__gallery">
+               <img src="assets/img/product-strawberry-1.png" alt="Selected Cake" id="pdp-img" class="pdp__img" referrerpolicy="no-referrer">
+            </div>
+
+            <!-- Right: Contiguous Purchase Module -->
+            <div class="pdp__module">
+               <div class="pdp__meta">
+                  <span id="pdp-category">Strawberry</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Freshly Baked to Order</span>
+               </div>
+
+               <h2 class="pdp__title" id="pdp-title">Strawberry Shortcake</h2>
+               <div class="pdp__price" id="pdp-price">$28.00</div>
+               <p class="pdp__desc" id="pdp-desc">Macerated valley strawberries layered with Madagascar vanilla bean chantilly and tender almond sponge.</p>
+
+               <div class="pdp__options">
+                  <div class="pdp__field">
+                     <label class="pdp__label">Select Size</label>
+                     <div class="pdp__size-group" id="pdp-size-group">
+                        <button type="button" class="pdp__size-btn active" data-multiplier="1" data-size-label="6&quot; Classic (8–10 Guests)">
+                           <span>6" Classic</span>
+                           <small>8–10 Guests</small>
+                        </button>
+                        <button type="button" class="pdp__size-btn" data-multiplier="1.35" data-size-label="8&quot; Celebration (14–18 Guests)">
+                           <span>8" Celebration</span>
+                           <small>14–18 Guests</small>
+                        </button>
+                        <button type="button" class="pdp__size-btn" data-multiplier="1.8" data-size-label="10&quot; Banquet (24–28 Guests)">
+                           <span>10" Banquet</span>
+                           <small>24–28 Guests</small>
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="pdp__field">
+                     <label for="pdp-inscription" class="pdp__label">Complimentary Chocolate Plaque Inscription</label>
+                     <input type="text" id="pdp-inscription" class="pdp__input" maxlength="36" placeholder="Optional message (e.g. Happy Birthday!)">
+                  </div>
+               </div>
+
+               <div class="pdp__purchase-bar">
+                  <div class="pdp__qty">
+                     <button type="button" class="pdp__qty-btn" id="pdp-qty-minus" aria-label="Decrease quantity">−</button>
+                     <span class="pdp__qty-val" id="pdp-qty-val">1</span>
+                     <button type="button" class="pdp__qty-btn" id="pdp-qty-plus" aria-label="Increase quantity">+</button>
+                  </div>
+                  <button type="button" class="button button--primary pdp__add-btn" id="pdp-add-btn">
+                     Add to Bag
+                  </button>
+               </div>
+
+               <div class="pdp__specs">
+                  <span>Allergens: Dairy, Eggs, Wheat</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Refrigerated Courier or Miraflores Pickup</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!--==================== SLIDE-OVER CART & CHECKOUT DRAWER ====================-->
+   <div class="drawer-backdrop" id="cart-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title">
+      <aside class="cart__panel">
+         <div class="cart__header">
+            <div>
+               <h2 class="cart__title" id="cart-drawer-title">Your Pâtisserie Bag</h2>
+               <p class="cart__shipping-note" id="cart-shipping-note">Add $45.00 for complimentary refrigerated courier delivery</p>
+            </div>
+            <button type="button" class="cart__close" id="cart-close" aria-label="Close shopping bag">
+               <i class="ri-close-line"></i>
+            </button>
+         </div>
+
+         <!-- Step 1: Cart Items View -->
+         <div class="cart__body" id="cart-items-view">
+            <div class="cart__items" id="cart-items-list"></div>
+
+            <div class="cart__empty" id="cart-empty-state">
+               <p class="cart__empty-title">Your bag is currently empty.</p>
+               <p class="cart__empty-sub">Explore our signature cakes or configure a bespoke tier to begin your order.</p>
+            </div>
+         </div>
+
+         <!-- Step 2: Checkout Verification Form (Hidden until Proceed to Checkout) -->
+         <form class="cart__checkout" id="cart-checkout-view" hidden>
+            <div class="cart__checkout-header">
+               <button type="button" class="cart__back-btn" id="cart-back-to-bag">
+                  <i class="ri-arrow-left-line"></i> Back to Bag
+               </button>
+               <h3 class="cart__checkout-title">Delivery &amp; Payment Verification</h3>
+            </div>
+
+            <div class="cart__form-fields">
+               <div class="bespoke__field">
+                  <label for="checkout-name" class="bespoke__label">Full Name</label>
+                  <input type="text" id="checkout-name" class="bespoke__input" required placeholder="e.g. Mateo Vargas">
+               </div>
+
+               <div class="bespoke__field">
+                  <label for="checkout-phone" class="bespoke__label">Phone / WhatsApp Number</label>
+                  <input type="tel" id="checkout-phone" class="bespoke__input" required placeholder="+51 987 654 321">
+               </div>
+
+               <div class="bespoke__field">
+                  <label for="checkout-address" class="bespoke__label">Delivery Address in Lima (or select Atelier Pickup)</label>
+                  <input type="text" id="checkout-address" class="bespoke__input" required placeholder="Av. Larco 740, Miraflores, Apt 402">
+               </div>
+
+               <div class="bespoke__row">
+                  <div class="bespoke__field">
+                     <label for="checkout-postal" class="bespoke__label">District / Postal Code</label>
+                     <input type="text" id="checkout-postal" class="bespoke__input" required placeholder="Miraflores 15074">
+                  </div>
+                  <div class="bespoke__field">
+                     <label for="checkout-payment" class="bespoke__label">Payment Method</label>
+                     <select id="checkout-payment" class="bespoke__select" required>
+                        <option value="Cash or POS Card on Delivery">Cash / Card on Delivery (COD)</option>
+                        <option value="Pay at Miraflores Salon Pickup">Pay at Salon Pickup</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+
+            <button type="submit" class="button button--primary cart__confirm-btn">
+               Confirm Order
+            </button>
+         </form>
+
+         <!-- Step 3: Post-Order Confirmation & Tracking State -->
+         <div class="cart__confirmed" id="cart-confirmed-view" hidden>
+            <div class="cart__confirmed-badge">
+               <i class="ri-check-line"></i>
+            </div>
+            <p class="cart__confirmed-kicker" id="confirmed-order-id">Order #DLZ-1042 Confirmed — Preparing Shipment</p>
+            <h3 class="cart__confirmed-title">Thank You for Your Order</h3>
+            <p class="cart__confirmed-desc" id="confirmed-summary-text">
+               Our pastry chefs have received your ticket and will contact you via WhatsApp prior to refrigerated dispatch.
+            </p>
+            <div class="cart__receipt" id="confirmed-receipt-box"></div>
+            <button type="button" class="button button--ghost" id="cart-new-order-btn">Continue Browsing</button>
+         </div>
+
+         <!-- Sticky Cart Footer -->
+         <div class="cart__footer" id="cart-footer">
+            <div class="cart__summary-row">
+               <span>Subtotal</span>
+               <span class="cart__subtotal" id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="cart__summary-row cart__summary-row--muted">
+               <span>Refrigerated Courier</span>
+               <span id="cart-delivery-fee">Complimentary over $45.00</span>
+            </div>
+            <div class="cart__summary-row cart__summary-row--total">
+               <span>Total</span>
+               <span id="cart-total">$0.00</span>
+            </div>
+            <button type="button" class="button button--primary cart__checkout-btn" id="cart-proceed-btn">
+               Proceed to Checkout
+            </button>
+         </div>
+      </aside>
+   </div>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
